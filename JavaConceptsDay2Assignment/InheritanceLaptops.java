@@ -1,22 +1,25 @@
 package JavaConceptsDay2Assignment;
 
 public class InheritanceLaptops {
-    final String lapName() {
-         return "Name";
-    }
-    final double lapPrice = 100;
-    final String Processor = "Processor";
-    final String Ram = "Ram";
-    final String Harddrive = "HD";
-}
-class LenovoLaptops extends InheritanceLaptops
-{
-     String lapName()
-     {
-         
-     }
+    public final String lapName;
+    public final double lapPrice;
+    public final String lapProcessor;
+    public final String lapRam;
+    public final String lapHD;
 
-    public void lapPrice() {
+    public InheritanceLaptops (String lName, double lPrice, String lProcessor, String lRam, String lHD)
+    {
+        this.lapName = lName;
+        this.lapPrice = lPrice;
+        this.lapProcessor = lProcessor;
+        this.lapRam = lRam;
+        this.lapHD = lHD;
+    }
+}
+class LaptopsSuperKey extends InheritanceLaptops {
+    public LaptopsSuperKey (String lName, double lPrice, String lProcessor, String lRam, String lHD)
+    {
+      super(lName,lPrice,lProcessor,lRam,lHD);
     }
 }
 
