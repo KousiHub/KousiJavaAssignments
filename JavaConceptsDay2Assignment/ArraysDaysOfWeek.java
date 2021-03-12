@@ -7,7 +7,7 @@ public class ArraysDaysOfWeek {
         System.out.println("Enter the number to get the day:");
         Scanner scanner = new Scanner(System.in);
         int dayNum = scanner.nextInt();
-        String[] dayNames = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        String[] dayNames = new String[]{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         if(dayNum < 7) {
             System.out.println("It is " + dayNames[dayNum]);
         }

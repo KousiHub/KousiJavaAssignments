@@ -16,6 +16,8 @@ public class InheritanceLaptops {
         this.lapHD = lHD;
     }
 }
+
+
 class LaptopsSuperKey extends InheritanceLaptops {
     public LaptopsSuperKey (String lName, double lPrice, String lProcessor, String lRam, String lHD)
     {
